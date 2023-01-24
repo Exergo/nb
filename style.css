@@ -1,3 +1,4 @@
+
 :root {
     --padding-layout: 0.6rem;
     --border-radii-layout: 5px;
@@ -534,9 +535,6 @@ p.notion-callout__content{
   display: none !important;
 }
 
-
-
-
 .notion-page {
 
   border: 1px solid var(--color-border-default)!important;
@@ -595,6 +593,8 @@ p.notion-callout__content{
     transition: background .2s ease-in-out!important;
 }
 
+
+
 /*---------  TOGGLE TEXT ---------*/
 
 .notion-toggle:before {
@@ -605,7 +605,7 @@ p.notion-callout__content{
     opacity: 1!important;
     content: "+"!important;
     top: 1.25rem!important;
-    right: 2rem!important;
+    left: 1rem!important;
 }
 
 .notion-toggle.open:before {
@@ -614,9 +614,9 @@ p.notion-callout__content{
     font-size: 1.5rem!important;
     line-height: 1!important;
     opacity: 1!important;
-    content: "━"!important;
+    content: "-"!important;
     top: 1.25rem!important;
-    right: 2rem!important;
+    left: 1rem!important;
 }
 
 
@@ -625,12 +625,12 @@ p.notion-callout__content{
 .notion-toggle-heading-1:before {
     position: absolute!important;
     font-weight: 100!important;
-    font-size: 4rem!important;
+    font-size: 3rem!important;
     line-height: 1!important;
     opacity: 1!important;
     content: "+"!important;
-    top: 2.5rem!important;
-    right: 2rem!important;
+    top: 3.1rem!important;
+    left: .4rem!important;
 }
 
 .notion-toggle-heading-1.open:before {
@@ -639,9 +639,9 @@ p.notion-callout__content{
     font-size: 4rem!important;
     line-height: 1!important;
     opacity: 1!important;
-    content: "━"!important;
+    content: "-"!important;
     top: 2.5rem!important;
-    right: 2rem!important;
+    left: .5rem!important;
 }
 
 /*---------  TOGGLE H2 ---------*/
@@ -649,23 +649,23 @@ p.notion-callout__content{
 .notion-toggle-heading-2:before {
     position: absolute!important;
     font-weight: 100!important;
-    font-size: 3rem!important;
+    font-size: 2.5rem!important;
     line-height: 1!important;
     opacity: 1!important;
     content: "+"!important;
-    top: 1.75rem!important;
-    right: 2rem!important;
+    top: 2.15rem!important;
+    left: .5rem!important;
 }
 
 .notion-toggle-heading-2.open:before {
     position: absolute!important;
     font-weight: 100!important;
-    font-size: 3rem!important;
+    font-size: 2.5rem!important;
     line-height: 1!important;
     opacity: 1!important;
-    content: "━"!important;
-    top: 1.75rem!important;
-    right: 2rem!important;
+    content: "-"!important;
+    top: 2.2rem!important;
+    left: .7rem!important;
 }
 
 /*---------  TOGGLE H3 ---------*/
@@ -677,8 +677,9 @@ p.notion-callout__content{
     line-height: 1!important;
     opacity: 1!important;
     content: "+"!important;
-    top: 1.75rem!important;
-    right: 2rem!important;
+    top: 1.7rem!important;
+    left: .8rem!important;
+    height: calc(var(--heading3-size)*1.3);
 }
 
 .notion-toggle-heading-3.open:before {
@@ -687,9 +688,13 @@ p.notion-callout__content{
     font-size: 2rem!important;
     line-height: 1!important;
     opacity: 1!important;
-    content: "━"!important;
-    top: 1.75rem!important;
-    right: 2rem!important;
+    content: "-"!important;
+    top: 1.7rem!important;
+    left: .8rem!important;
+}
+
+.notion-toggle-heading-3>.notion-toggle__summary>.notion-toggle__trigger {
+    height: calc(var(--heading3-size)*1.3);
 }
 
 
